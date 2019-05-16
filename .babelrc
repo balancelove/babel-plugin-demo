@@ -1,0 +1,21 @@
+{
+  "presets": ["@babel/preset-env", "@babel/preset-react"],
+  "plugins": [
+    [
+      "./plugins/demand-import",
+      {
+        "libName": "antd",
+        "libDir": "lib"
+      },
+      "antd"
+    ],
+    [
+      "./plugins/demand-import",
+      {
+        "libName": "lodash",
+        "libDir": "dist"
+      },
+      "lodash"
+    ]
+  ]
+}
